@@ -13,20 +13,13 @@
 
 ActiveRecord::Schema.define(version: 20130925124111) do
 
-  create_table "newsletters", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "nls", force: true do |t|
     t.string   "name"
     t.string   "email"
     t.text     "message"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "signups", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
