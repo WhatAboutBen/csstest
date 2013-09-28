@@ -55,9 +55,8 @@ html, body
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
+		width: 100%;
 	}
-	
 
 
 /*********************************************************************************/
@@ -271,6 +270,7 @@ html, body
 		font-weight: 400;
 		font-size: 1.2em;
 		color: #FFF;
+    
 	}
 	
 	.button:before
@@ -470,7 +470,7 @@ html, body
 	#welcome
 	{
 		overflow: hidden;
-		padding: 8em 0em;
+		padding: 5em 0em 5em 0em;
 		text-align: center;
 		color: rgba(255,255,255,0.3);
 	}
@@ -478,6 +478,9 @@ html, body
 	#welcome .content
 	{
 		padding: 0em 8em;
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
 	}
 	
 	
@@ -573,7 +576,7 @@ html, body
 	
 	#newsletter .content
 	{
-		width: 600px;
+		width: 50%;
 		margin: 0px auto;
 	}
 	
@@ -615,18 +618,22 @@ html, body
 	.column3,
 	.column4
 	{
-		width: 282px;
+		width: 20%;
 	}
 	
-	.column1,
+	.column1
+  {
+		float: left;
+		margin-left: 5%;
+    margin-right: 3%;
+	}
+
 	.column2,
-	.column3
+	.column3,
+  .column4
 	{
 		float: left;
-		margin-right: 24px;
+    margin-right: 3%;
 	}
 	
-	.column4
-	{
-		float: right;
-	}
+
