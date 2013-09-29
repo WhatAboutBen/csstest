@@ -12,4 +12,5 @@ class StaticsController < ApplicationController
   def clients
   end
   
+  
 end
